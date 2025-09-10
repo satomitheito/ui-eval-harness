@@ -9,12 +9,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: astral-sh/setup-uv@v3
-      - name: Sync deps
-        run: uv sync
+        with:
+          python-version: "3.11"   # keep it stable across machines
+
+      - name: Install deps (incl. dev extras)
+        run: uv sync --extra dev
+
       - name: Lint
         run: |
           uv run ruff check .
           uv run black --check .
+
       - name: Tests
         run: uv run pytest -q

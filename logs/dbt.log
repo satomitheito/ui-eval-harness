@@ -1,0 +1,291 @@
+[0m01:02:22.360180 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a81e510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d70f750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d70f890>]}
+
+
+============================== 01:02:22.445704 | 3d23ae3b-d3ae-4797-8165-7f52cb421826 ==============================
+[0m01:02:22.445704 [info ] [MainThread]: Running with dbt=1.10.11
+[0m01:02:22.446080 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'target_path': 'None', 'profiles_dir': '/Users/80937802/Documents/Code/ui-eval-harness/dbt', 'use_colors': 'True', 'debug': 'False', 'introspect': 'True', 'no_print': 'None', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'partial_parse': 'True', 'warn_error': 'None', 'invocation_command': 'dbt debug', 'cache_selected_only': 'False', 'fail_fast': 'False', 'static_parser': 'True', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'log_path': 'logs', 'version_check': 'True', 'empty': 'None', 'indirect_selection': 'eager', 'log_format': 'default'}
+[0m01:02:22.602184 [info ] [MainThread]: dbt version: 1.10.11
+[0m01:02:22.602468 [info ] [MainThread]: python version: 3.13.3
+[0m01:02:22.602644 [info ] [MainThread]: python path: /Users/80937802/Documents/Code/ui-eval-harness/.venv/bin/python
+[0m01:02:22.602792 [info ] [MainThread]: os info: macOS-15.5-arm64-arm-64bit-Mach-O
+[0m01:02:22.763697 [info ] [MainThread]: Using profiles dir at /Users/80937802/Documents/Code/ui-eval-harness/dbt
+[0m01:02:22.764018 [info ] [MainThread]: Using profiles.yml file at /Users/80937802/Documents/Code/ui-eval-harness/dbt/profiles.yml
+[0m01:02:22.764248 [info ] [MainThread]: Using dbt_project.yml file at /Users/80937802/Documents/Code/ui-eval-harness/dbt_project.yml
+[0m01:02:22.773601 [info ] [MainThread]: adapter type: duckdb
+[0m01:02:22.773889 [info ] [MainThread]: adapter version: 1.9.6
+[0m01:02:22.774082 [info ] [MainThread]: Configuration:
+[0m01:02:22.774232 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m01:02:22.774379 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m01:02:22.774583 [info ] [MainThread]: Required dependencies:
+[0m01:02:22.774869 [debug] [MainThread]: Executing "git --help"
+[0m01:02:22.795906 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m01:02:22.796643 [debug] [MainThread]: STDERR: "b''"
+[0m01:02:22.796867 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m01:02:22.797081 [info ] [MainThread]: Connection:
+[0m01:02:22.797303 [info ] [MainThread]:   database: ui_eval
+[0m01:02:22.797508 [info ] [MainThread]:   schema: main
+[0m01:02:22.797663 [info ] [MainThread]:   path: data/duckdb/ui_eval.duckdb
+[0m01:02:22.797811 [info ] [MainThread]:   config_options: None
+[0m01:02:22.797950 [info ] [MainThread]:   extensions: None
+[0m01:02:22.798097 [info ] [MainThread]:   settings: {}
+[0m01:02:22.798238 [info ] [MainThread]:   external_root: .
+[0m01:02:22.798374 [info ] [MainThread]:   use_credential_provider: None
+[0m01:02:22.798512 [info ] [MainThread]:   attach: None
+[0m01:02:22.798649 [info ] [MainThread]:   filesystems: None
+[0m01:02:22.798781 [info ] [MainThread]:   remote: None
+[0m01:02:22.798920 [info ] [MainThread]:   plugins: None
+[0m01:02:22.799047 [info ] [MainThread]:   disable_transactions: False
+[0m01:02:22.799497 [info ] [MainThread]: Registered adapter: duckdb=1.9.6
+[0m01:02:22.885195 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m01:02:24.740217 [debug] [MainThread]: Using duckdb connection "debug"
+[0m01:02:24.740579 [debug] [MainThread]: On debug: select 1 as id
+[0m01:02:24.740791 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m01:02:24.781529 [debug] [MainThread]: DuckDB adapter: Error running SQL: select 1 as id
+[0m01:02:24.781831 [debug] [MainThread]: DuckDB adapter: Rolling back transaction.
+[0m01:02:24.782122 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m01:02:24.782403 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m01:02:24.782584 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/80937802/Documents/Code/ui-eval-harness/dbt_project.yml> not found
+
+[0m01:02:24.782765 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Runtime Error
+  IO Error: Cannot open file "/Users/80937802/Documents/Code/ui-eval-harness/data/duckdb/ui_eval.duckdb": No such file or directory
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m01:02:24.793619 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 2.5028157, "process_in_blocks": "0", "process_kernel_time": 1.017302, "process_mem_max_rss": "157204480", "process_out_blocks": "0", "process_user_time": 2.208848}
+[0m01:02:24.794267 [debug] [MainThread]: Command `dbt debug` failed at 01:02:24.794120 after 2.50 seconds
+[0m01:02:24.794619 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m01:02:24.794886 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e315f30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e02ad50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e17d590>]}
+[0m01:02:24.795194 [debug] [MainThread]: Flushing usage events
+[0m01:02:25.316078 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:05:22.600994 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105c201a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11014f750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11014f890>]}
+
+
+============================== 01:05:22.604988 | 59c2e31e-528e-4801-a45b-1f3fd220e958 ==============================
+[0m01:05:22.604988 [info ] [MainThread]: Running with dbt=1.10.11
+[0m01:05:22.605334 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'debug': 'False', 'partial_parse': 'True', 'printer_width': '80', 'log_path': '/Users/80937802/Documents/Code/ui-eval-harness/logs', 'cache_selected_only': 'False', 'use_colors': 'True', 'target_path': 'None', 'static_parser': 'True', 'write_json': 'True', 'fail_fast': 'False', 'log_format': 'default', 'no_print': 'None', 'version_check': 'True', 'empty': 'None', 'quiet': 'False', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/Users/80937802/Documents/Code/ui-eval-harness/dbt', 'indirect_selection': 'eager', 'use_experimental_parser': 'False'}
+[0m01:05:22.640204 [info ] [MainThread]: dbt version: 1.10.11
+[0m01:05:22.640508 [info ] [MainThread]: python version: 3.13.3
+[0m01:05:22.640679 [info ] [MainThread]: python path: /Users/80937802/Documents/Code/ui-eval-harness/.venv/bin/python
+[0m01:05:22.640838 [info ] [MainThread]: os info: macOS-15.5-arm64-arm-64bit-Mach-O
+[0m01:05:22.712759 [info ] [MainThread]: Using profiles dir at /Users/80937802/Documents/Code/ui-eval-harness/dbt
+[0m01:05:22.713056 [info ] [MainThread]: Using profiles.yml file at /Users/80937802/Documents/Code/ui-eval-harness/dbt/profiles.yml
+[0m01:05:22.713222 [info ] [MainThread]: Using dbt_project.yml file at /Users/80937802/Documents/Code/ui-eval-harness/dbt_project.yml
+[0m01:05:22.715764 [info ] [MainThread]: adapter type: duckdb
+[0m01:05:22.715941 [info ] [MainThread]: adapter version: 1.9.6
+[0m01:05:22.765037 [info ] [MainThread]: Configuration:
+[0m01:05:22.765394 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m01:05:22.765555 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m01:05:22.765710 [info ] [MainThread]: Required dependencies:
+[0m01:05:22.765966 [debug] [MainThread]: Executing "git --help"
+[0m01:05:22.787463 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m01:05:22.788002 [debug] [MainThread]: STDERR: "b''"
+[0m01:05:22.788196 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m01:05:22.788384 [info ] [MainThread]: Connection:
+[0m01:05:22.788637 [info ] [MainThread]:   database: ui_eval
+[0m01:05:22.788874 [info ] [MainThread]:   schema: main
+[0m01:05:22.789033 [info ] [MainThread]:   path: data/duckdb/ui_eval.duckdb
+[0m01:05:22.789181 [info ] [MainThread]:   config_options: None
+[0m01:05:22.789324 [info ] [MainThread]:   extensions: None
+[0m01:05:22.789467 [info ] [MainThread]:   settings: {}
+[0m01:05:22.789607 [info ] [MainThread]:   external_root: .
+[0m01:05:22.789742 [info ] [MainThread]:   use_credential_provider: None
+[0m01:05:22.789879 [info ] [MainThread]:   attach: None
+[0m01:05:22.790014 [info ] [MainThread]:   filesystems: None
+[0m01:05:22.790144 [info ] [MainThread]:   remote: None
+[0m01:05:22.790280 [info ] [MainThread]:   plugins: None
+[0m01:05:22.790409 [info ] [MainThread]:   disable_transactions: False
+[0m01:05:22.790802 [info ] [MainThread]: Registered adapter: duckdb=1.9.6
+[0m01:05:22.858056 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m01:05:22.980768 [debug] [MainThread]: Using duckdb connection "debug"
+[0m01:05:22.981027 [debug] [MainThread]: On debug: select 1 as id
+[0m01:05:22.981192 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m01:05:23.017831 [debug] [MainThread]: SQL status: OK in 0.037 seconds
+[0m01:05:23.018485 [debug] [MainThread]: On debug: Close
+[0m01:05:23.018702 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m01:05:23.018890 [info ] [MainThread]: [32mAll checks passed![0m
+[0m01:05:23.021175 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 0.48071346, "process_in_blocks": "0", "process_kernel_time": 0.270066, "process_mem_max_rss": "131760128", "process_out_blocks": "0", "process_user_time": 0.870322}
+[0m01:05:23.021441 [debug] [MainThread]: Command `dbt debug` succeeded at 01:05:23.021390 after 0.48 seconds
+[0m01:05:23.021625 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m01:05:23.021823 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1103db100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1104f0950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110239d00>]}
+[0m01:05:23.022038 [debug] [MainThread]: Flushing usage events
+[0m01:05:23.186475 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:05:31.077534 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1043501a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10605f750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10605f890>]}
+
+
+============================== 01:05:31.081672 | 47c3ac90-145d-44d9-a031-4f56241e29b6 ==============================
+[0m01:05:31.081672 [info ] [MainThread]: Running with dbt=1.10.11
+[0m01:05:31.082016 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'log_format': 'default', 'use_experimental_parser': 'False', 'quiet': 'False', 'use_colors': 'True', 'static_parser': 'True', 'empty': 'False', 'target_path': 'None', 'fail_fast': 'False', 'introspect': 'True', 'printer_width': '80', 'warn_error': 'None', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/Users/80937802/Documents/Code/ui-eval-harness/dbt', 'invocation_command': 'dbt build', 'log_path': '/Users/80937802/Documents/Code/ui-eval-harness/logs', 'debug': 'False', 'no_print': 'None'}
+[0m01:05:31.325733 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '47c3ac90-145d-44d9-a031-4f56241e29b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10464b950>]}
+[0m01:05:31.354489 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '47c3ac90-145d-44d9-a031-4f56241e29b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105ef3ac0>]}
+[0m01:05:31.357006 [info ] [MainThread]: Registered adapter: duckdb=1.9.6
+[0m01:05:31.453235 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m01:05:31.453853 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m01:05:31.454151 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '47c3ac90-145d-44d9-a031-4f56241e29b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10652ee50>]}
+[0m01:05:32.329194 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '47c3ac90-145d-44d9-a031-4f56241e29b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1060b5e50>]}
+[0m01:05:32.355820 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/80937802/Documents/Code/ui-eval-harness/target/manifest.json
+[0m01:05:32.385449 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/80937802/Documents/Code/ui-eval-harness/target/semantic_manifest.json
+[0m01:05:32.604050 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '47c3ac90-145d-44d9-a031-4f56241e29b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112c6a270>]}
+[0m01:05:32.604358 [info ] [MainThread]: Found 1 model, 431 macros
+[0m01:05:32.605229 [info ] [MainThread]: 
+[0m01:05:32.605420 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m01:05:32.605579 [info ] [MainThread]: 
+[0m01:05:32.605834 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m01:05:32.606259 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_ui_eval'
+[0m01:05:32.704729 [debug] [ThreadPool]: Using duckdb connection "list_ui_eval"
+[0m01:05:32.705032 [debug] [ThreadPool]: On list_ui_eval: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "ui_eval_harness", "target_name": "dev", "connection_name": "list_ui_eval"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"ui_eval"'
+    
+  
+  
+[0m01:05:32.705195 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:05:32.718373 [debug] [ThreadPool]: SQL status: OK in 0.013 seconds
+[0m01:05:32.719557 [debug] [ThreadPool]: On list_ui_eval: Close
+[0m01:05:32.719952 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ui_eval, now create_ui_eval_main)
+[0m01:05:32.720217 [debug] [ThreadPool]: Creating schema "database: "ui_eval"
+schema: "main"
+"
+[0m01:05:32.723583 [debug] [ThreadPool]: Using duckdb connection "create_ui_eval_main"
+[0m01:05:32.723798 [debug] [ThreadPool]: On create_ui_eval_main: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "ui_eval_harness", "target_name": "dev", "connection_name": "create_ui_eval_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='ui_eval'
+        and type='sqlite'
+    
+  
+[0m01:05:32.723967 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m01:05:32.724728 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m01:05:32.725531 [debug] [ThreadPool]: Using duckdb connection "create_ui_eval_main"
+[0m01:05:32.725694 [debug] [ThreadPool]: On create_ui_eval_main: BEGIN
+[0m01:05:32.725907 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m01:05:32.726047 [debug] [ThreadPool]: Using duckdb connection "create_ui_eval_main"
+[0m01:05:32.726186 [debug] [ThreadPool]: On create_ui_eval_main: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "ui_eval_harness", "target_name": "dev", "connection_name": "create_ui_eval_main"} */
+
+    
+    
+        create schema if not exists "ui_eval"."main"
+    
+[0m01:05:32.726917 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m01:05:32.727326 [debug] [ThreadPool]: On create_ui_eval_main: COMMIT
+[0m01:05:32.727474 [debug] [ThreadPool]: Using duckdb connection "create_ui_eval_main"
+[0m01:05:32.727606 [debug] [ThreadPool]: On create_ui_eval_main: COMMIT
+[0m01:05:32.727806 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m01:05:32.727953 [debug] [ThreadPool]: On create_ui_eval_main: Close
+[0m01:05:32.728438 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_ui_eval_main, now list_ui_eval_main)
+[0m01:05:32.731027 [debug] [ThreadPool]: Using duckdb connection "list_ui_eval_main"
+[0m01:05:32.731218 [debug] [ThreadPool]: On list_ui_eval_main: BEGIN
+[0m01:05:32.731356 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m01:05:32.731586 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m01:05:32.731733 [debug] [ThreadPool]: Using duckdb connection "list_ui_eval_main"
+[0m01:05:32.731878 [debug] [ThreadPool]: On list_ui_eval_main: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "ui_eval_harness", "target_name": "dev", "connection_name": "list_ui_eval_main"} */
+select
+      'ui_eval' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'ui_eval'
+  
+[0m01:05:32.741586 [debug] [ThreadPool]: SQL status: OK in 0.010 seconds
+[0m01:05:32.742232 [debug] [ThreadPool]: On list_ui_eval_main: ROLLBACK
+[0m01:05:32.743296 [debug] [ThreadPool]: Failed to rollback 'list_ui_eval_main'
+[0m01:05:32.743456 [debug] [ThreadPool]: On list_ui_eval_main: Close
+[0m01:05:32.743742 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '47c3ac90-145d-44d9-a031-4f56241e29b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110a0fba0>]}
+[0m01:05:32.743988 [debug] [MainThread]: Using duckdb connection "master"
+[0m01:05:32.744135 [debug] [MainThread]: On master: BEGIN
+[0m01:05:32.744263 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m01:05:32.744494 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m01:05:32.744638 [debug] [MainThread]: On master: COMMIT
+[0m01:05:32.744773 [debug] [MainThread]: Using duckdb connection "master"
+[0m01:05:32.744904 [debug] [MainThread]: On master: COMMIT
+[0m01:05:32.745154 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m01:05:32.745338 [debug] [MainThread]: On master: Close
+[0m01:05:32.757349 [debug] [Thread-1 (]: Began running node model.ui_eval_harness.stg_generation
+[0m01:05:32.757756 [info ] [Thread-1 (]: 1 of 1 START sql view model main.stg_generation ................................ [RUN]
+[0m01:05:32.758046 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ui_eval_main, now model.ui_eval_harness.stg_generation)
+[0m01:05:32.758236 [debug] [Thread-1 (]: Began compiling node model.ui_eval_harness.stg_generation
+[0m01:05:32.761452 [debug] [Thread-1 (]: Writing injected SQL for node "model.ui_eval_harness.stg_generation"
+[0m01:05:32.762872 [debug] [Thread-1 (]: Began executing node model.ui_eval_harness.stg_generation
+[0m01:05:32.781354 [debug] [Thread-1 (]: Writing runtime sql for node "model.ui_eval_harness.stg_generation"
+[0m01:05:32.782789 [debug] [Thread-1 (]: Using duckdb connection "model.ui_eval_harness.stg_generation"
+[0m01:05:32.783015 [debug] [Thread-1 (]: On model.ui_eval_harness.stg_generation: BEGIN
+[0m01:05:32.783187 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m01:05:32.783649 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m01:05:32.783869 [debug] [Thread-1 (]: Using duckdb connection "model.ui_eval_harness.stg_generation"
+[0m01:05:32.784047 [debug] [Thread-1 (]: On model.ui_eval_harness.stg_generation: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "ui_eval_harness", "target_name": "dev", "node_id": "model.ui_eval_harness.stg_generation"} */
+
+  
+  create view "ui_eval"."main"."stg_generation__dbt_tmp" as (
+    select * from read_parquet('data/*.parquet') limit 0
+  );
+
+[0m01:05:32.786604 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "ui_eval_harness", "target_name": "dev", "node_id": "model.ui_eval_harness.stg_generation"} */
+
+  
+  create view "ui_eval"."main"."stg_generation__dbt_tmp" as (
+    select * from read_parquet('data/*.parquet') limit 0
+  );
+
+[0m01:05:32.786846 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m01:05:32.787106 [debug] [Thread-1 (]: On model.ui_eval_harness.stg_generation: ROLLBACK
+[0m01:05:32.798424 [debug] [Thread-1 (]: Failed to rollback 'model.ui_eval_harness.stg_generation'
+[0m01:05:32.798661 [debug] [Thread-1 (]: On model.ui_eval_harness.stg_generation: Close
+[0m01:05:32.800616 [debug] [Thread-1 (]: Runtime Error in model stg_generation (dbt/models/staging/stg_generation.sql)
+  IO Error: No files found that match the pattern "data/*.parquet"
+[0m01:05:32.803830 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '47c3ac90-145d-44d9-a031-4f56241e29b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1112f9d90>]}
+[0m01:05:32.804242 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model main.stg_generation ....................... [[31mERROR[0m in 0.04s]
+[0m01:05:32.804556 [debug] [Thread-1 (]: Finished running node model.ui_eval_harness.stg_generation
+[0m01:05:32.804842 [debug] [Thread-7 (]: Marking all children of 'model.ui_eval_harness.stg_generation' to be skipped because of status 'error'.  Reason: Runtime Error in model stg_generation (dbt/models/staging/stg_generation.sql)
+  IO Error: No files found that match the pattern "data/*.parquet".
+[0m01:05:32.805685 [debug] [MainThread]: Using duckdb connection "master"
+[0m01:05:32.805861 [debug] [MainThread]: On master: BEGIN
+[0m01:05:32.806013 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m01:05:32.806301 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m01:05:32.806447 [debug] [MainThread]: On master: COMMIT
+[0m01:05:32.806581 [debug] [MainThread]: Using duckdb connection "master"
+[0m01:05:32.806709 [debug] [MainThread]: On master: COMMIT
+[0m01:05:32.806897 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m01:05:32.807035 [debug] [MainThread]: On master: Close
+[0m01:05:32.807211 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m01:05:32.807341 [debug] [MainThread]: Connection 'model.ui_eval_harness.stg_generation' was properly closed.
+[0m01:05:32.807485 [info ] [MainThread]: 
+[0m01:05:32.807649 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 0.20 seconds (0.20s).
+[0m01:05:32.807968 [debug] [MainThread]: Command end result
+[0m01:05:32.818754 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/80937802/Documents/Code/ui-eval-harness/target/manifest.json
+[0m01:05:32.820439 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/80937802/Documents/Code/ui-eval-harness/target/semantic_manifest.json
+[0m01:05:32.824260 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/80937802/Documents/Code/ui-eval-harness/target/run_results.json
+[0m01:05:32.824533 [info ] [MainThread]: 
+[0m01:05:32.824762 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m01:05:32.824958 [info ] [MainThread]: 
+[0m01:05:32.825166 [error] [MainThread]: [31mFailure in model stg_generation (dbt/models/staging/stg_generation.sql)[0m
+[0m01:05:32.825352 [error] [MainThread]:   Runtime Error in model stg_generation (dbt/models/staging/stg_generation.sql)
+  IO Error: No files found that match the pattern "data/*.parquet"
+[0m01:05:32.825495 [info ] [MainThread]: 
+[0m01:05:32.825672 [info ] [MainThread]:   compiled code at target/compiled/ui_eval_harness/dbt/models/staging/stg_generation.sql
+[0m01:05:32.825818 [info ] [MainThread]: 
+[0m01:05:32.825988 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m01:05:32.827937 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": false, "command_wall_clock_time": 1.793548, "process_in_blocks": "0", "process_kernel_time": 0.317917, "process_mem_max_rss": "179601408", "process_out_blocks": "0", "process_user_time": 1.540629}
+[0m01:05:32.828232 [debug] [MainThread]: Command `dbt build` failed at 01:05:32.828168 after 1.79 seconds
+[0m01:05:32.828459 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112c21ff0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110ec5310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110ec6030>]}
+[0m01:05:32.828660 [debug] [MainThread]: Flushing usage events
+[0m01:05:32.958277 [debug] [MainThread]: An error was encountered while trying to flush usage events

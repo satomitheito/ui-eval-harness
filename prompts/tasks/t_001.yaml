@@ -1,0 +1,8 @@
+id: t_001
+category: forms
+brief: Two-column signup with email, password, OAuth buttons; responsive down to 360px.
+acceptance:
+  - Exactly one email and one password input
+  - OAuth buttons for Google and GitHub
+  - Two columns at >=1024px; single column <640px
+complexity: 2

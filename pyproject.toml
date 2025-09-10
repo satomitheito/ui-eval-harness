@@ -1,0 +1,44 @@
+[project]
+name = "ui-eval-harness"
+version = "0.1.0"
+description = "AI evaluation harness for Figma-style UI generation"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "duckdb>=1.0.0",
+    "dbt-duckdb>=1.7.0",
+    "pandas>=2.2.0",
+    "polars>=1.0.0",
+    "pydantic>=2.8.0",
+    "jinja2>=3.1",
+    "streamlit>=1.36.0",
+    "playwright>=1.45.0",
+    "pytest>=8.0.0",
+    "pytest-playwright>=0.5.0",
+    "statsmodels>=0.14.0",
+    "scikit-posthocs>=0.8.0",
+    "click>=8.1.0",
+    "rich>=13.7.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "black>=24.3.0",
+    "ruff>=0.5.0",
+    "pre-commit>=3.7.0",
+    "mypy>=1.7.0",
+    "types-PyYAML",
+    "types-requests",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.black]
+line-length = 100
+
+[tool.pytest.ini_options]
+addopts = "-q"
+pythonpath = ["src"]
+

@@ -1,0 +1,7 @@
+ui_eval_harness:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: data/duckdb/ui_eval.duckdb
+      threads: 4

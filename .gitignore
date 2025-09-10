@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+.venv*/
+.env.*
+dist/
+build/
+*.egg-info/
+
+# Streamlit
+.streamlit/
+
+# dbt
+target/
+dbt_packages/
+
+# DuckDB data
+data/duckdb/*.duckdb
+data/duckdb/*.wal
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VSCode / IDEs
+.vscode/
+.idea/
+
+# Coverage, test
+.coverage
+htmlcov/
+.cache/
+.mypy_cache/
+pytest_cache/

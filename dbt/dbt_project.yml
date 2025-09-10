@@ -1,0 +1,15 @@
+name: "ui_eval_harness"
+version: "1.0.0"
+config-version: 2
+
+profile: "ui_eval_harness"
+
+model-paths: ["models"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  ui_eval_harness:
+    +materialized: table
+    staging:
+      +materialized: view

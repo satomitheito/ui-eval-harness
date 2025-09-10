@@ -15,6 +15,7 @@ build/
 .streamlit/
 
 # dbt
+logs/
 target/
 dbt_packages/
 

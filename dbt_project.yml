@@ -4,7 +4,11 @@ config-version: 2
 
 profile: "ui_eval_harness"
 
-model-paths: ["models"]
+# paths are relative to this file, now at the repo root
+model-paths: ["dbt/models"]
+seed-paths: ["dbt/seeds"]
+snapshot-paths: ["dbt/snapshots"]
+
 target-path: "target"
 clean-targets: ["target", "dbt_packages"]
 
